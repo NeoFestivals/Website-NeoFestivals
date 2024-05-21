@@ -163,10 +163,10 @@
         <div class="wrap">
         
           <div class="fix-12-12 toCenter">
-            <h1 class="fromAbove ae-1">Aktuell ist dieser Teil der Website noch in Arbeit. Den Blog zur Partyorganisation der Blockparty 2023 kannst du dir aber schonmal anschauen :)</h1>
+            <h1 class="fromAbove ae-1">Aktuell ist dieser Teil der Website noch in Arbeit. Den Auftermovie zur Blockparty Villingen-Schwenningen kannst du dir aber schonmal anschauen :)</h1>
             <div class="fix-7-12">
               <div class="video-container ae-2" onclick="loadVideo()" style="cursor: pointer; position: relative;">
-                  <img src="assets/img/BlogThumbnail.png" alt="Video Vorschau" style="width: 100%; height: auto; position: absolute; top: 0; left: 0;">
+                  <img src="assets/img/AftermovieThumbnail.png" alt="Video Vorschau" style="width: 100%; height: auto; position: absolute; top: 0; left: 0;">
                   <!-- Hier wird das Video geladen -->
                   <div id="videoFrame" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: none;"></div>
               </div>
@@ -174,7 +174,7 @@
                   function loadVideo() {
                     var videoFrame = document.getElementById('videoFrame');
                     videoFrame.style.display = 'block';  // Video-Container wird sichtbar
-                    videoFrame.innerHTML = '<iframe class="responsive-iframe" src="https://www.youtube.com/embed/s1aUavisnyk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>';
+                    videoFrame.innerHTML = '<iframe class="responsive-iframe" src="https://www.youtube.com/watch?v=x7PwhyeQ6vM&" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>';
                     var videoThumbnail = document.querySelector('.video-container img');
                     videoThumbnail.style.display = 'none';  // Ausblenden des Thumbnails
                   }
