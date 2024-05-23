@@ -12346,30 +12346,30 @@ p.remind-43 {
 }
 
 
+@keyframes slide {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-120%); }
+}
+
+@keyframes fadeOutIn {
+  0%, 100% { opacity: 0; }
+  5%, 95% { opacity: 1; }
+}
+
 .logo-slider-wrap {
   width: 100%;
   overflow: hidden;
-  height: 100px;  /* Höhe an die Größe Ihrer Logos anpassen */
+  height: 100px; /* Höhe an die Größe Ihrer Logos anpassen */
 }
 
 .logo-slider {
   display: flex;
-  animation: slide 20s linear infinite, fade 60s linear infinite;
+  animation: slide 30s linear infinite, fadeOutIn 30s linear infinite;
 }
 
 .logo-slider img {
-  height: 80px;  /* Größe entsprechend den Logo-Dimensionen anpassen */
-  margin-right: 20px;  /* Abstand zwischen den Logos */
-}
-
-@keyframes slide {
-  0%, 100% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
-}
-
-@keyframes fade {
-  0%, 2%, 100% { opacity: 0; }
-  4%, 98% { opacity: 1; }
+  height: 80px; /* Größe entsprechend den Logo-Dimensionen anpassen */
+  margin-right: 20px; /* Abstand zwischen den Logos */
 }
 
 .schatten {
