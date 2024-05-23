@@ -12325,6 +12325,8 @@ p.remind-43 {
 
 .breite{
   max-width: 340px;
+  width: 100%;
+  display: inline-block;
 }
 
 .hover img {
