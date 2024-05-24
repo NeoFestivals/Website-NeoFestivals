@@ -12392,3 +12392,11 @@ p.remind-43 {
   width: 100%;
   height: 100%;
 }
+
+.superhover {
+  color: #d94fd2 !important;
+}
+
+.superhover:hover {
+  color: #d94fc2;
+}
