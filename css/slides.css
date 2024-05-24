@@ -12350,7 +12350,7 @@ p.remind-43 {
 
 @keyframes slide {
   0% { transform: translateX(0); }
-  100% { transform: translateX(-120%); }
+  100% { transform: translateX(-320%); }
 }
 
 @keyframes fadeOutIn {
@@ -12366,7 +12366,7 @@ p.remind-43 {
 
 .logo-slider {
   display: flex;
-  animation: slide 30s linear infinite, fadeOutIn 30s linear infinite;
+  animation: slide 60s linear infinite, fadeOutIn 60s linear infinite;
 }
 
 .logo-slider img {
