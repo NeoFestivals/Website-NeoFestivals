@@ -12400,3 +12400,21 @@ p.remind-43 {
 .superhover:hover {
   color: #d94fc2;
 }
+.kontainer {
+  display: flex;
+  flex-direction: column; /* Elemente innerhalb des Containers vertikal anordnen */
+  align-items: flex-start; /* Der Containerinhalt bleibt linksbündig */
+  width: 300px; /* Breite des Containers, kann angepasst werden */
+  text-align: center; /* Text innerhalb der Elemente wird zentriert */
+  margin-left: 0; /* Platziert den gesamten Container links */
+}
+
+.dext {
+  margin: 10px 0; /* Abstand zwischen Text und Bild */
+  width: 100%; /* Sorgt dafür, dass der Textbereich die volle Breite des Containers einnimmt */
+}
+
+.image {
+  max-width: 100%; /* Passt das Bild an die Containerbreite an */
+  height: auto; /* Erhält das Seitenverhältnis des Bildes */
+}
