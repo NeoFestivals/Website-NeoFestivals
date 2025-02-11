@@ -6,7 +6,7 @@
 	<meta name="apple-mobile-web-app-capable" content="yes" />
 
 	<!-- Page Title -->
-	<title>Neo Festivals - Datenschutz</title>
+	<title>Neo Festivals - Anmeldung Street Art Workshop</title>
 	<link rel="icon" href="assets/img/favicon.png" type="image/png">
 
 	<!-- Compressed Styles -->
@@ -16,6 +16,7 @@
 	<!-- jQuery 3.3.1 -->
     <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
 	<script src="js/jquery.min.js"></script>
+
 
 
 	<!-- Compressed Scripts -->
@@ -170,21 +171,26 @@
         <div class="fix-7-12">
           <div class="textcontainer schatten left">
             <div class="bold headline">
-                <h1>Datenschutz</h1>
+              <h1>Street Art Workshop - Anmeldung</h1>
+              <h4>Bock auf Graffiti? Dann sei dabei!</h4>
             </div>
-	    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScoMclRsu2muTPAwKL1Sq-_VStDCjX21_OX3Z-9owZg3P1lsw/viewform?embedded=true" width="640" height="1689" frameborder="0" marginheight="0" marginwidth="0">Wird geladen…</iframe>
-            <h2 class="margin-top-4">1. Datenschutz auf einen Blick</h2>
-            <h3>Allgemeine Hinweise</h3>
-            <p>
-                Die folgenden Hinweise geben einen einfachen &Uuml;berblick dar&uuml;ber, was mit Ihren personenbezogenen Daten
-                passiert, wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie pers&ouml;nlich
-                identifiziert werden k&ouml;nnen. Ausf&uuml;hrliche Informationen zum Thema Datenschutz entnehmen Sie unserer
-                unter diesem Text aufgef&uuml;hrten Datenschutzerkl&auml;rung.
-            </p>
+            <p>Am <span class="bold">Samstag</span> startet unser Workshop an der Jugendkunstschule. Hier kannst du mit der Hilfe von <span class="bold">echten Profis</span> lernen deine ersten Skizzen zu machen, einen Style zu entwickeln und die erste Farbe an die Wand zu bringen.</p>
+            <p>Keine Sorge, alle Materialien wie Dosen und Farben stellen wir <span class="bold">kostenlos</span> zur Verfügung – du brauchst nur deine Ideen und Lust zum Ausprobieren!</p>
+            <p><span class="bold">Sonntags</span> geht es dann so richtig raus auf die Straßen. Eure verwirklichten Graffitis stellen wir dann bei der nächsten <span class="bold">Blockparty</span> aus!</p>
+            <p>Alle sind eingeladen! Egal, ob jung oder alt – schnapp dir deine <span class="bold">Freunde</span>, deine <span class="bold">Familie</span> oder komm einfach allein und lerne <span class="bold">neue Leute kennen</span>. Es wird kreativ, es wird lustig und es wird alles kostenlos!</p>
+            <p>Meld dich schnell an – wir freuen uns auf dich!</p>
+            <div class="form-container">
+              <!-- Dein eingebettetes Google Formular -->
+              <iframe id="google-form" src="https://docs.google.com/forms/d/e/1FAIpQLScoMclRsu2muTPAwKL1Sq-_VStDCjX21_OX3Z-9owZg3P1lsw/viewform?embedded=true" 
+                      frameborder="0" 
+                      marginheight="0" 
+                      marginwidth="0">
+                  Wird geladen…
+              </iframe>
+            </div>
+          </div>
         </div>
-        </div>
-        
-      </div>
+      </div> 
     </div>
   </div>
   <div class="background" style="background-image:url(assets/img/background/img-27.jpg)"></div>
@@ -224,6 +230,29 @@
 
 <!-- Loading Progress Bar -->
 <div class="progress-bar blue"></div>
+
+<script>
+  // Funktion zum Anpassen der iframe-Höhe
+  function adjustIframeHeight() {
+      const iframe = document.getElementById('google-form');
+      const interval = setInterval(function() {
+          try {
+              const iframeDocument = iframe.contentWindow.document;
+              const iframeHeight = iframeDocument.documentElement.scrollHeight;
+
+              if (iframeHeight > 0) {
+                  iframe.style.height = iframeHeight + 'px'; // Setzt die Höhe des iframe auf die Höhe des Formulars
+                  clearInterval(interval); // Stoppt den Intervall, wenn die Höhe erfolgreich angepasst wurde
+              }
+          } catch (e) {
+              console.error('Fehler beim Berechnen der Höhe:', e);
+          }
+      }, 500); // Überprüft alle 500ms, bis das Formular geladen ist
+  }
+
+  // Rufe die Funktion beim Laden der Seite auf
+  window.onload = adjustIframeHeight;
+</script>
 
 </body>
 </html>

@@ -12418,3 +12418,34 @@ p.remind-43 {
   max-width: 100%; /* Passt das Bild an die Containerbreite an */
   height: auto; /* Erhält das Seitenverhältnis des Bildes */
 }
+
+/*====================================
+=            FORM CONTROL            =
+====================================*/
+.form-control:focus {
+  border-color: #ff00cc;
+  box-shadow: 0 0 0 0.2rem rgba(253, 101, 90, 0.25); }
+
+.form-control::-webkit-input-placeholder {
+  opacity: .5; }
+
+.form-control::-moz-placeholder {
+  opacity: .5; }
+
+.form-control:-ms-input-placeholder {
+  opacity: .5; }
+
+.form-control::-ms-input-placeholder {
+  opacity: .5; }
+
+.form-control::placeholder {
+  opacity: .5; }
+
+/*=====  End of FORM CONTROL  ======*/
+
+        /* Das Google-Formular soll die gesamte Höhe des sichtbaren Bereichs ausfüllen */
+iframe {
+  width: 100%; /* Stellt sicher, dass das Formular die gesamte Breite ausfüllt */
+  border: none; /* Entfernt den Rahmen */
+  min-height: 600px; /* Starthöhe, damit das Formular nicht zu klein ist */
+}
