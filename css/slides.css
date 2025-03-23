@@ -12380,9 +12380,9 @@ p.remind-43 {
 
 .video-container {
   position: relative;
-  padding-top: 56.25%; /* Seitenverhältnis beibehalten */
-  margin: 0;
-  padding: 0;
+  width: 100%;
+  padding-top: 56.25%; /* Hier das gewünschte Seitenverhältnis eintragen */
+  overflow: hidden;
 }
 
 .responsive-iframe {
@@ -12391,8 +12391,6 @@ p.remind-43 {
   left: 0;
   width: 100%;
   height: 100%;
-  margin: 0;
-  padding: 0;
 }
 
 .superhover {
@@ -12402,6 +12400,7 @@ p.remind-43 {
 .superhover:hover {
   color: #d94fc2;
 }
+
 .kontainer {
   display: flex;
   flex-direction: column; /* Elemente innerhalb des Containers vertikal anordnen */
@@ -12419,35 +12418,4 @@ p.remind-43 {
 .image {
   max-width: 100%; /* Passt das Bild an die Containerbreite an */
   height: auto; /* Erhält das Seitenverhältnis des Bildes */
-}
-
-/*====================================
-=            FORM CONTROL            =
-====================================*/
-.form-control:focus {
-  border-color: #ff00cc;
-  box-shadow: 0 0 0 0.2rem rgba(253, 101, 90, 0.25); }
-
-.form-control::-webkit-input-placeholder {
-  opacity: .5; }
-
-.form-control::-moz-placeholder {
-  opacity: .5; }
-
-.form-control:-ms-input-placeholder {
-  opacity: .5; }
-
-.form-control::-ms-input-placeholder {
-  opacity: .5; }
-
-.form-control::placeholder {
-  opacity: .5; }
-
-/*=====  End of FORM CONTROL  ======*/
-
-        /* Das Google-Formular soll die gesamte Höhe des sichtbaren Bereichs ausfüllen */
-iframe {
-  width: 100%; /* Stellt sicher, dass das Formular die gesamte Breite ausfüllt */
-  border: none; /* Entfernt den Rahmen */
-  min-height: 600px; /* Starthöhe, damit das Formular nicht zu klein ist */
 }
