@@ -12304,6 +12304,9 @@ p.remind-43 {
 
 /*# sourceMappingURL=slides.css.map */
 
+.video-wrap {
+  z-index: -100;
+}
 
 .custom-video {
   position: absolute;
@@ -12377,9 +12380,9 @@ p.remind-43 {
 
 .video-container {
   position: relative;
-  width: 100%;
-  padding-top: 56.25%; /* Hier das gewünschte Seitenverhältnis eintragen */
-  overflow: hidden;
+  padding-top: 56.25%; /* Seitenverhältnis beibehalten */
+  margin: 0;
+  padding: 0;
 }
 
 .responsive-iframe {
@@ -12388,6 +12391,8 @@ p.remind-43 {
   left: 0;
   width: 100%;
   height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .superhover {
