@@ -49,8 +49,8 @@
             </ul>
         </div>
         <div class="right">
-            <a class="button pink gradient" href="https://www.instagram.com/paardullis/">Instagram</a>
-            <a class="button black gradient" href="https://www.tiktok.com/@paardullis">TikTok</a>
+            <a class="button pink gradient" href="https://www.instagram.com/neofestivalsnf/">Instagram</a>
+            <a class="button black gradient" href="https://www.tiktok.com/@neofestivals">TikTok</a>
         </div>
     </div>
 </nav>
@@ -72,12 +72,13 @@
             <div class="wrap">
                 <div class="fix-12-12 toCenter">
                     <h1 class="ae-1 rave-title">Blockparty <span class="highlight-2026">RAVE 2026</span></h1>
-                    <p class="ae-2 large opacity-8">Oberndorf am Neckar macht sich bereit für den nächsten Abriss.</p>
+                    <p class="ae-2 large opacity-8">Oberndorf am Neckar <br> Macht euch bereit für den Abriss</p>
                     
                     <div class="fix-8-12 margin-top-4">
-                        <div class="video-container ae-3" onclick="loadVideo()" style="cursor: pointer; position: relative; border: 2px solid #ff00ff; box-shadow: 0 0 30px rgba(255, 0, 255, 0.3);">
-                            <img src="assets/img/AftermovieThumbnail.png" alt="Rave Teaser" style="width: 100%; height: auto;">
-                            <div id="videoFrame" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: none;"></div>
+                        <div class="video-container ae-3" onclick="loadVideo()" style="cursor: pointer; position: relative; border: 2px solid #ff00ff; box-shadow: 0 0 40px rgba(255, 0, 255, 5); padding-top: unset;">
+                            <div href="https://www.instagram.com/neofestivalsnf/" >
+                            <img src="assets/img/Blockparty RAVE mit Förderung.png" alt="Rave" style="width: 100%; height: auto;">
+                            </div>
                         </div>
                         
                         <div class="ae-5 margin-top-3">
@@ -85,24 +86,15 @@
                             <p>Die Planungen laufen auf Hochtouren. Sei gespannt auf Line-Up News und Ticket-Phasen.</p>
                         </div>
 
-                        <a class="button purple gradient ae-7" href="https://www.instagram.com/paardullis/">Nichts verpassen auf Instagram</a>
+                        <a class="button purple gradient ae-7" href="https://www.instagram.com/neofestivalsnf/">Nichts verpassen auf Instagram</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="background" style="background-image:url(assets/img/background/rave-bg-2026.jpg)"></div>
+    <div class="background" style="background-image:url(assets/img/blockparty\ logo.png)" ></div>
 </section>
 
-<script>
-    function loadVideo() {
-        var videoFrame = document.getElementById('videoFrame');
-        videoFrame.style.display = 'block';
-        // Hier ID deines neuen Teasers einfügen falls vorhanden
-        videoFrame.innerHTML = '<iframe class="responsive-iframe" src="https://www.youtube.com/embed/x7PwhyeQ6vM?autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>';
-        document.querySelector('.video-container img').style.display = 'none';
-    }
-</script>
 
 <nav class="panel bottom">
     <div class="sections desktop">
