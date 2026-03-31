@@ -1,30 +1,32 @@
-// Initialize interactions and animations
 document.addEventListener('DOMContentLoaded', () => {
-    // 1. Initialize Lucide Icons
+    // Initialize Lucide icons
     lucide.createIcons();
 
-    // 2. Mobile Menu Toggle
+    // Mobile menu toggle logic
     const btn = document.getElementById('mobile-menu-btn');
     const menu = document.getElementById('mobile-menu');
     
-    // Find icon by its specific structure rather than a missing ID
+    // Find the icon element inside the button without relying on a missing ID
     const icon = btn ? btn.querySelector('i') : null;
 
-    if (btn && menu && icon) {
+    if (btn && menu) {
         btn.addEventListener('click', () => {
             menu.classList.toggle('hidden');
             
-            // Swap icon
-            if (menu.classList.contains('hidden')) {
-                icon.setAttribute('data-lucide', 'menu');
-            } else {
-                icon.setAttribute('data-lucide', 'x');
+            // Swap icon based on menu state
+            if (icon) {
+                if (menu.classList.contains('hidden')) {
+                    icon.setAttribute('data-lucide', 'menu');
+                } else {
+                    icon.setAttribute('data-lucide', 'x');
+                }
+                // Re-render icons after changing the attribute
+                lucide.createIcons();
             }
-            lucide.createIcons();
         });
     }
 
-    // 3. Scroll Animations
+    // Scroll animations using IntersectionObserver
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
