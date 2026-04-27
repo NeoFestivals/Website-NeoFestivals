@@ -609,7 +609,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     setTimeout(() => {
                         card.classList.add("active");
                         card.classList.remove("exit");
-                    }, i * 300); // 🔥 langsamer stagger
+                    }, i * 100); // 🔥 langsamer stagger
                 });
             }
 
@@ -623,7 +623,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     setTimeout(() => {
                         card.classList.add("exit");
                         card.classList.remove("active");
-                    }, i * 150);
+                    }, i * 100);
                 });
             }
 
@@ -679,6 +679,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 <ul class="space-y-3 text-sm text-zinc-400">
                     <li><a href="impressum.html" class="hover:text-fuchsia-400 transition-colors">Impressum</a></li>
                     <li><a href="datenschutz.html" class="hover:text-fuchsia-400 transition-colors">Datenschutz</a></li>
+                    <li><a href="agb.html" class="hover:text-fuchsia-400 transition-colors">AGB</a></li>
                 </ul>
             </div>
         </div>
