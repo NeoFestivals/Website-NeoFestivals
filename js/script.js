@@ -45,3 +45,27 @@ document.addEventListener('DOMContentLoaded', () => {
         animatedElements.forEach(el => observer.observe(el));
     }
 });
+
+
+
+// Floating ticket button visibility toggle
+    const sliderSection = document.querySelector('.marquee-mask');
+    const floatingBtn = document.getElementById('floating-ticket-btn');
+
+    if (sliderSection && floatingBtn) {
+        window.addEventListener('scroll', () => {
+            // Calculate the bottom position of the slider
+            const sliderBottom = sliderSection.offsetTop + sliderSection.offsetHeight;
+            
+            // Show button if scrolled past the slider, otherwise hide it
+            if (window.scrollY > sliderBottom) {
+                floatingBtn.classList.remove('translate-y-24', 'opacity-0', 'pointer-events-none');
+                floatingBtn.classList.add('translate-y-0', 'opacity-100', 'pointer-events-auto');
+            } else {
+                floatingBtn.classList.add('translate-y-24', 'opacity-0', 'pointer-events-none');
+                floatingBtn.classList.remove('translate-y-0', 'opacity-100', 'pointer-events-auto');
+            }
+        });
+    } else {
+        console.warn('Slider section or floating button not found for scroll logic.');
+    }
